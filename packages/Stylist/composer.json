@@ -1,0 +1,40 @@
+{
+    "name": "absdev/stylist",
+    "description": "Laravel 5 theming package.",
+    "authors": [
+        {
+            "name": "Mark Gregory",
+            "email": "mark.gregory@absdev.net"
+        },
+        {
+            "name": "Mike Dugan",
+            "email": "mike@mjdugan.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravellux/html": "^7.1",
+        "illuminate/support": "^v11.34.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.9",
+        "hpunit/phpunit": "^11.0.1"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FloatingPoint\\Stylist\\": "src/Stylist",
+            "Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}

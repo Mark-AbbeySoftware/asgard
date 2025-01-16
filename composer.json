@@ -1,5 +1,5 @@
 {
-    "$schema": "https://getcomposer.org/schema.json",
+    "schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
@@ -10,13 +10,22 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "absdev/modules": "*",
+        "absdev/stylist": "*",
         "laravel/framework": "^11.31",
         "laravel/jetstream": "^5.3",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "livewire/livewire": "^3.0"
+        "laravellux/html": "^7.1",
+        "livewire/livewire": "^3.0",
+        "mcamara/laravel-localization": "^2.2",
+        "predis/predis": "^2.3",
+        "tightenco/ziggy": "^2.4",
+        "yajra/laravel-datatables-oracle": "^11.1"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.14",
+        "beyondcode/laravel-query-detector": "^2.0",
         "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.1",
         "laravel/pint": "^1.13",
@@ -63,15 +72,24 @@
             "dont-discover": []
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "composer/installers": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "minimum-stability": "dev"
 }
