@@ -61,6 +61,33 @@ host('stage')
     ->set('git_tty', false)
     ->set('ssh_type', 'native');
 
+host('develop')
+    ->set('hostname', 'asgard.absdev.net')
+    ->set('remote_user', 'mag')
+    ->set('identityFile', '~/.ssh/id_rsa')
+    ->set('deploy_path', '/var/www/asgard/dev')
+    ->set('writable_use_sudo', false)
+    ->set('use_relative_symlink', true)
+    ->set('http_user', 'mag')
+    ->set('branch', 'stage')
+    ->set('ssh_multiplexing', true)
+    ->set('git_tty', false)
+    ->set('ssh_type', 'native');
+
+host('docs')
+    ->set('hostname', 'asgard.absdev.net')
+    ->set('remote_user', 'mag')
+    ->set('identityFile', '~/.ssh/id_rsa')
+    ->set('deploy_path', '/var/www/asgard/docs')
+    ->set('writable_use_sudo', false)
+    ->set('use_relative_symlink', true)
+    ->set('http_user', 'mag')
+    ->set('branch', 'docs')
+    ->set('ssh_multiplexing', true)
+    ->set('git_tty', false)
+    ->set('ssh_type', 'native');
+
+
 // Hooks
 
 
