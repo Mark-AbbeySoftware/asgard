@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9d7d01788543c614f69e82d4c27329e",
+    "content-hash": "279ca090ba82da3bd0032bb9463a80ce",
     "packages": [
         {
             "name": "absdev/modules",
@@ -86,6 +86,78 @@
                 "modules",
                 "mpba",
                 "rad"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "absdev/sidebar",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "./packages/Sidebar",
+                "reference": "77094406a9f84250e42a8bd93cc2bd39456c8a12"
+            },
+            "require": {
+                "illuminate/cache": "~10.0|~11.0",
+                "illuminate/container": "~10.0|~11.0",
+                "illuminate/contracts": "~10.0|~11.0",
+                "illuminate/routing": "~10.0|~11.0",
+                "illuminate/support": "~10.0|~11.0",
+                "illuminate/view": "~10.0|~11.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "^10.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AbbeySoftwareDevelopment\\Sidebar\\SidebarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AbbeySoftwareDevelopment\\Sidebar\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "AbbeySoftwareDevelopment\\Sidebar\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Gregory",
+                    "email": "mark.gregory@absdev.net"
+                },
+                {
+                    "name": "Maatwebsite.nl",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "A sidebar builder for Laravel",
+            "keywords": [
+                "acp",
+                "laravel",
+                "menu",
+                "sidebar"
             ],
             "transport-options": {
                 "symlink": true,
