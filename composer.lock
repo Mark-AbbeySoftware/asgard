@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9d7d01788543c614f69e82d4c27329e",
+    "content-hash": "5dc07a060125869c15908947f42bad44",
     "packages": [
         {
             "name": "absdev/modules",
@@ -9414,7 +9414,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "absdev/stylist": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
