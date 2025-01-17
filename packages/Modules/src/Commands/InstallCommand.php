@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Json;
-use absdev\Modules\Process\Installer;
+use AbbeySoftwareDevelopment\Modules\Json;
+use AbbeySoftwareDevelopment\Modules\Process\Installer;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

@@ -1,6 +1,6 @@
 <?php
 
-use absdev\Modules\Activators\FileActivator;
+use AbbeySoftwareDevelopment\Modules\Activators\FileActivator;
 
 return [
 
@@ -26,7 +26,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/absdev/laravel-modules/src/Commands/stubs',
+        'path' => base_path() . '/vendor/AbbeySoftwareDevelopment/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',

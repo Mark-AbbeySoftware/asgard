@@ -1,8 +1,9 @@
 <?php
-namespace FloatingPoint\Stylist\Html;
 
+namespace AbbeySoftwareDevelopment\Stylist\Html;
+
+use AbbeySoftwareDevelopment\Stylist\Facades\StylistFacade;
 use Collective\Html\HtmlBuilder;
-use FloatingPoint\Stylist\Facades\StylistFacade;
 use Illuminate\Routing\UrlGenerator;
 
 class ThemeHtmlBuilder
@@ -30,9 +31,9 @@ class ThemeHtmlBuilder
     /**
      * Generate a link to a JavaScript file.
      *
-     * @param  string  $url
-     * @param  array   $attributes
-     * @param  bool    $secure
+     * @param string $url
+     * @param array $attributes
+     * @param bool $secure
      * @return string
      */
     public function script($url, $attributes = array(), $secure = null)
@@ -44,9 +45,9 @@ class ThemeHtmlBuilder
      * Generate a link to a CSS file. With Stylist, this could actually generate
      * numerous style tags, due to CSS inheritance requirements.
      *
-     * @param  string  $url
-     * @param  array   $attributes
-     * @param  bool    $secure
+     * @param string $url
+     * @param array $attributes
+     * @param bool $secure
      * @return string
      */
     public function style($url, $attributes = array(), $secure = null)
@@ -71,10 +72,10 @@ class ThemeHtmlBuilder
     /**
      * Generate an HTML image element.
      *
-     * @param  string  $url
-     * @param  string  $alt
-     * @param  array   $attributes
-     * @param  bool    $secure
+     * @param string $url
+     * @param string $alt
+     * @param array $attributes
+     * @param bool $secure
      * @return string
      */
     public function image($url, $alt = null, $attributes = array(), $secure = null)
@@ -97,10 +98,10 @@ class ThemeHtmlBuilder
     /**
      * Generate a HTML link to an asset.
      *
-     * @param  string  $url
-     * @param  string  $title
-     * @param  array   $attributes
-     * @param  bool    $secure
+     * @param string $url
+     * @param string $title
+     * @param array $attributes
+     * @param bool $secure
      * @return string
      */
     public function linkAsset($url, $title = null, $attributes = array(), $secure = null)

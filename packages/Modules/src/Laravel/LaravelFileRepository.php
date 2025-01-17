@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Laravel;
+namespace AbbeySoftwareDevelopment\Modules\Laravel;
 
-use absdev\Modules\FileRepository;
+use AbbeySoftwareDevelopment\Modules\FileRepository;
 
 class LaravelFileRepository extends FileRepository
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
 use Illuminate\Filesystem\Filesystem;
-use absdev\Modules\Exceptions\InvalidJsonException;
+use AbbeySoftwareDevelopment\Modules\Exceptions\InvalidJsonException;
 
 class Json
 {

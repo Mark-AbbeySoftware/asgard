@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Support\Config;
+namespace AbbeySoftwareDevelopment\Modules\Support\Config;
 
 class GenerateConfigReader
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Providers;
+namespace AbbeySoftwareDevelopment\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use absdev\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
 
 class BootstrapServiceProvider extends ServiceProvider
 {

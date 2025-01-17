@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Process;
+namespace AbbeySoftwareDevelopment\Modules\Process;
 
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Contracts\RunableInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\RunableInterface;
 
 class Runner implements RunableInterface
 {

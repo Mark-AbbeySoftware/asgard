@@ -1,10 +1,10 @@
 <?php
 
-namespace FloatingPoint\Stylist;
+namespace AbbeySoftwareDevelopment\Stylist;
 
-use FloatingPoint\Stylist\Html\ThemeHtmlBuilder;
-use FloatingPoint\Stylist\Theme\Loader;
-use FloatingPoint\Stylist\Theme\Stylist;
+use AbbeySoftwareDevelopment\Stylist\Html\ThemeHtmlBuilder;
+use AbbeySoftwareDevelopment\Stylist\Theme\Loader;
+use AbbeySoftwareDevelopment\Stylist\Theme\Stylist;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\AggregateServiceProvider;
 
@@ -89,10 +89,10 @@ class StylistServiceProvider extends AggregateServiceProvider
     {
         $aliasLoader = AliasLoader::getInstance();
 
-        $aliasLoader->alias('Stylist', 'FloatingPoint\Stylist\Facades\StylistFacade');
-        $aliasLoader->alias('Theme', 'FloatingPoint\Stylist\Facades\ThemeFacade');
+        $aliasLoader->alias('Stylist', 'AbbeySoftwareDevelopment\Stylist\Facades\StylistFacade');
+        $aliasLoader->alias('Theme', 'AbbeySoftwareDevelopment\Stylist\Facades\ThemeFacade');
 
-        $this->app->alias('stylist', 'FloatingPoint\Stylist\Theme\Stylist');
+        $this->app->alias('stylist', 'AbbeySoftwareDevelopment\Stylist\Theme\Stylist');
     }
 
     /**
@@ -101,7 +101,7 @@ class StylistServiceProvider extends AggregateServiceProvider
     private function registerCommands()
     {
         $this->commands(
-            'FloatingPoint\Stylist\Console\PublishAssetsCommand'
+            'AbbeySoftwareDevelopment\Stylist\Console\PublishAssetsCommand'
         );
     }
 

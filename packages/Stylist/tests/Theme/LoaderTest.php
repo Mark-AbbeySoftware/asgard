@@ -1,20 +1,21 @@
 <?php
+
 namespace Tests\Theme;
 
-use FloatingPoint\Stylist\Theme\Loader;
+use AbbeySoftwareDevelopment\Stylist\Theme\Loader;
 
 class LoaderTest extends \Tests\TestCase
 {
     private $loader;
 
-	public function init()
+    public function init()
     {
         $this->loader = new Loader();
     }
 
     public function testFromPath()
     {
-        $theme = $this->loader->fromPath(__DIR__.'/../Stubs/Themes/Parent/');
+        $theme = $this->loader->fromPath(__DIR__ . '/../Stubs/Themes/Parent/');
 
         $this->assertEquals('Parent theme', $theme->getName());
         $this->assertEquals('This is a parent theme.', $theme->getDescription());

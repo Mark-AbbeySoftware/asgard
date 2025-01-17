@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Migrations\Migrator;
-use absdev\Modules\Traits\MigrationLoaderTrait;
+use AbbeySoftwareDevelopment\Modules\Migrations\Migrator;
+use AbbeySoftwareDevelopment\Modules\Traits\MigrationLoaderTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -27,7 +27,7 @@ class MigrateResetCommand extends Command
     protected $description = 'Reset the modules migrations.';
 
     /**
-     * @var \absdev\Modules\Contracts\RepositoryInterface
+     * @var \AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface
      */
     protected $module;
 

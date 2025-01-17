@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Publishing;
+namespace AbbeySoftwareDevelopment\Modules\Publishing;
 
-use absdev\Modules\Support\Config\GenerateConfigReader;
+use AbbeySoftwareDevelopment\Modules\Support\Config\GenerateConfigReader;
 
 class AssetPublisher extends Publisher
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace absdev\Modules\Generators;
+namespace AbbeySoftwareDevelopment\Modules\Generators;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command as Console;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
-use absdev\Modules\Contracts\ActivatorInterface;
-use absdev\Modules\FileRepository;
-use absdev\Modules\Support\Config\GenerateConfigReader;
-use absdev\Modules\Support\Stub;
+use AbbeySoftwareDevelopment\Modules\Contracts\ActivatorInterface;
+use AbbeySoftwareDevelopment\Modules\FileRepository;
+use AbbeySoftwareDevelopment\Modules\Support\Config\GenerateConfigReader;
+use AbbeySoftwareDevelopment\Modules\Support\Stub;
 
 class ModuleGenerator extends Generator
 {
@@ -51,7 +51,7 @@ class ModuleGenerator extends Generator
     /**
      * The module instance.
      *
-     * @var \absdev\Modules\Module
+     * @var \AbbeySoftwareDevelopment\Modules\Module
      */
     protected $module;
 
@@ -216,7 +216,7 @@ class ModuleGenerator extends Generator
     /**
      * Get the module instance.
      *
-     * @return \absdev\Modules\Module
+     * @return \AbbeySoftwareDevelopment\Modules\Module
      */
     public function getModule()
     {

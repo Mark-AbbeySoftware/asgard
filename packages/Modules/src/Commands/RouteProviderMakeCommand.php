@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
-use absdev\Modules\Support\Config\GenerateConfigReader;
-use absdev\Modules\Support\Stub;
-use absdev\Modules\Traits\ModuleCommandTrait;
+use AbbeySoftwareDevelopment\Modules\Support\Config\GenerateConfigReader;
+use AbbeySoftwareDevelopment\Modules\Support\Stub;
+use AbbeySoftwareDevelopment\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

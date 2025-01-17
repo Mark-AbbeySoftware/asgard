@@ -1,9 +1,10 @@
 <?php
+
 namespace Tests\Theme;
 
-use FloatingPoint\Stylist\Theme\Loader;
-use FloatingPoint\Stylist\Theme\Stylist;
-use FloatingPoint\Stylist\Theme\Theme;
+use AbbeySoftwareDevelopment\Stylist\Theme\Loader;
+use AbbeySoftwareDevelopment\Stylist\Theme\Stylist;
+use AbbeySoftwareDevelopment\Stylist\Theme\Theme;
 
 class StylistTest extends \Tests\TestCase
 {
@@ -21,7 +22,7 @@ class StylistTest extends \Tests\TestCase
     public function testThemeDiscovery()
     {
         $stylist = new Stylist(new Loader, $this->app);
-        $themes = $stylist->discover(__DIR__.'/../Stubs');
+        $themes = $stylist->discover(__DIR__ . '/../Stubs');
 
         $this->assertCount(3, $themes);
     }
@@ -44,7 +45,7 @@ class StylistTest extends \Tests\TestCase
     {
         $stylist = new Stylist(new Loader, $this->app);
 
-        $stylist->registerPath(__DIR__.'/../Stubs/Themes/Parent');
+        $stylist->registerPath(__DIR__ . '/../Stubs/Themes/Parent');
 
         $this->assertEquals('Parent theme', $stylist->get('Parent theme')->getName());
     }
@@ -52,7 +53,7 @@ class StylistTest extends \Tests\TestCase
     public function testMultiplePathRegistrations()
     {
         $stylist = new Stylist(new Loader, $this->app);
-        $paths = $stylist->discover(__DIR__.'/../Stubs');
+        $paths = $stylist->discover(__DIR__ . '/../Stubs');
 
         $stylist->registerPaths($paths);
         $stylist->activate($stylist->get('Child theme'));
@@ -66,7 +67,7 @@ class StylistTest extends \Tests\TestCase
     }
 
     /**
-     * @expectedException FloatingPoint\Stylist\Theme\Exceptions\ThemeNotFoundException
+     * @expectedException AbbeySoftwareDevelopment\Stylist\Theme\Exceptions\ThemeNotFoundException
      */
     public function testInvalidTheme()
     {
@@ -77,7 +78,7 @@ class StylistTest extends \Tests\TestCase
     public function testThemeViewIsOverloadable()
     {
         $stylist = new Stylist(new Loader, $this->app);
-        $paths = $stylist->discover(__DIR__.'/../Stubs');
+        $paths = $stylist->discover(__DIR__ . '/../Stubs');
 
         $stylist->registerPaths($paths);
         $stylist->activate($stylist->get('Overloader'));

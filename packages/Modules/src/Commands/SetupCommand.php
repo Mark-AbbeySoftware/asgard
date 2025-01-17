@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
 

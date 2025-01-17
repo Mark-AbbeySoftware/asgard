@@ -1,12 +1,12 @@
 <?php
 
-namespace absdev\Modules\Migrations;
+namespace AbbeySoftwareDevelopment\Modules\Migrations;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use absdev\Modules\Module;
-use absdev\Modules\Support\Config\GenerateConfigReader;
+use AbbeySoftwareDevelopment\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Support\Config\GenerateConfigReader;
 
 class Migrator
 {

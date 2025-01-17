@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Contracts;
+namespace AbbeySoftwareDevelopment\Modules\Contracts;
 
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 interface ActivatorInterface
 {

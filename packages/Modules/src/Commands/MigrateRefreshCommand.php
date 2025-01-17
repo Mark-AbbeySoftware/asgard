@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Traits\ModuleCommandTrait;
+use AbbeySoftwareDevelopment\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

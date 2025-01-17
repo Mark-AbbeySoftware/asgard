@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection as BaseCollection;

@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Lumen;
+namespace AbbeySoftwareDevelopment\Modules\Lumen;
 
-use absdev\Modules\FileRepository;
+use AbbeySoftwareDevelopment\Modules\FileRepository;
 
 class LumenFileRepository extends FileRepository
 {

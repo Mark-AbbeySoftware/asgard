@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Lumen;
+namespace AbbeySoftwareDevelopment\Modules\Lumen;
 
 use Illuminate\Support\Str;
-use absdev\Modules\Module as BaseModule;
+use AbbeySoftwareDevelopment\Modules\Module as BaseModule;
 
 class Module extends BaseModule
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace FloatingPoint\Stylist\Theme;
+namespace AbbeySoftwareDevelopment\Stylist\Theme;
 
+use AbbeySoftwareDevelopment\Stylist\Theme\Exceptions\ThemeNotFoundException;
 use Cache;
-use FloatingPoint\Stylist\Theme\Exceptions\ThemeNotFoundException;
 use Illuminate\Container\Container;
 
 /**
@@ -13,7 +13,7 @@ use Illuminate\Container\Container;
  * search for a given theme, register new ones or even search for themes within your application
  * directory.
  *
- * @package FloatingPoint\Stylist\Theme
+ * @package AbbeySoftwareDevelopment\Stylist\Theme
  */
 class Stylist
 {
@@ -138,7 +138,7 @@ class Stylist
             $this->activateFinderPaths($this->get($theme->getParent()));
         }
 
-        $this->view->getFinder()->prependLocation($theme->getPath().'/views/');
+        $this->view->getFinder()->prependLocation($theme->getPath() . '/views/');
     }
 
     /**
@@ -207,7 +207,7 @@ class Stylist
      */
     public function discover($directory)
     {
-        $searchString = $directory.'/theme.json';
+        $searchString = $directory . '/theme.json';
 
         $files = str_replace('theme.json', '', $this->rglob($searchString));
 
@@ -221,7 +221,8 @@ class Stylist
      * @param int $flags
      * @return array
      */
-    protected function rglob($pattern, $flags = 0) {
+    protected function rglob($pattern, $flags = 0)
+    {
         $files = glob($pattern, $flags);
 
         if ($files) {
@@ -230,14 +231,14 @@ class Stylist
 
         $files = [];
 
-        $possibleFiles = glob(dirname($pattern).'/*', GLOB_ONLYDIR|GLOB_NOSORT);
+        $possibleFiles = glob(dirname($pattern) . '/*', GLOB_ONLYDIR | GLOB_NOSORT);
 
         if ($possibleFiles === false) {
             $possibleFiles = [];
         }
 
         foreach ($possibleFiles as $dir) {
-            $files = array_merge($files, $this->rglob($dir.'/'.basename($pattern), $flags));
+            $files = array_merge($files, $this->rglob($dir . '/' . basename($pattern), $flags));
         }
 
         return $files;

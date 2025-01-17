@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/Modules",
-                "reference": "f20b9c0d146ae916eb48ea14d28701ae415b7444"
+                "reference": "abdfb90d212325926783207eef54ff42fd100d53"
             },
             "require": {
                 "ext-json": "*",
@@ -30,10 +30,10 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "absdev\\Modules\\LaravelModulesServiceProvider"
+                        "AbbeySoftwareDevelopment\\Modules\\LaravelModulesServiceProvider"
                     ],
                     "aliases": {
-                        "Module": "absdev\\Modules\\Facades\\Module"
+                        "Module": "AbbeySoftwareDevelopment\\Modules\\Facades\\Module"
                     }
                 },
                 "branch-alias": {
@@ -42,7 +42,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "absdev\\Modules\\": "src"
+                    "AbbeySoftwareDevelopment\\Modules\\": "src"
                 },
                 "files": [
                     "src/helpers.php"
@@ -98,7 +98,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/Stylist",
-                "reference": "2fd428c255b4c8a8396d5449bdc171065dbdc3bb"
+                "reference": "92d534b266b3504dad948b224d3fc86f64608060"
             },
             "require": {
                 "illuminate/support": "^v11.34.2",
@@ -114,13 +114,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "FloatingPoint\\Stylist\\StylistServiceProvider"
+                        "AbbeySoftwareDevelopment\\Stylist\\StylistServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "FloatingPoint\\Stylist\\": "src/Stylist",
+                    "AbbeySoftwareDevelopment\\Stylist\\": "src/Stylist",
                     "Tests\\": "tests"
                 }
             },
@@ -4903,12 +4903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "a4d4dd6587151385196a67ab5b2438a227d598cb"
+                "reference": "b4f50ff1a0e9d4a7fab01b769818a5cee4f0a9d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/a4d4dd6587151385196a67ab5b2438a227d598cb",
-                "reference": "a4d4dd6587151385196a67ab5b2438a227d598cb",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/b4f50ff1a0e9d4a7fab01b769818a5cee4f0a9d6",
+                "reference": "b4f50ff1a0e9d4a7fab01b769818a5cee4f0a9d6",
                 "shasum": ""
             },
             "require": {
@@ -4973,7 +4973,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-06T20:20:06+00:00"
+            "time": "2025-01-17T11:48:14+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -4981,12 +4981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "eb0e7ae3cffc41d41fc9705c35366e8aac763d95"
+                "reference": "25193ed922e3d7ffa71710896565ff18c54842ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/eb0e7ae3cffc41d41fc9705c35366e8aac763d95",
-                "reference": "eb0e7ae3cffc41d41fc9705c35366e8aac763d95",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/25193ed922e3d7ffa71710896565ff18c54842ba",
+                "reference": "25193ed922e3d7ffa71710896565ff18c54842ba",
                 "shasum": ""
             },
             "require": {
@@ -5087,7 +5087,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-10T14:48:57+00:00"
+            "time": "2025-01-17T11:48:14+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -5095,12 +5095,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "3f0bd9049cb82e9ea5fd190af803bcfd60c779ab"
+                "reference": "5fb014827ce51e0b4d29131067f10aba6c4a4618"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/3f0bd9049cb82e9ea5fd190af803bcfd60c779ab",
-                "reference": "3f0bd9049cb82e9ea5fd190af803bcfd60c779ab",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/5fb014827ce51e0b4d29131067f10aba6c4a4618",
+                "reference": "5fb014827ce51e0b4d29131067f10aba6c4a4618",
                 "shasum": ""
             },
             "require": {
@@ -5167,7 +5167,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-12T17:22:35+00:00"
+            "time": "2025-01-17T11:48:14+00:00"
         },
         {
             "name": "symfony/mime",
@@ -5965,12 +5965,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "118d03b29feddbc464cba0c533bdca378aea0863"
+                "reference": "f031b6df5461d86bd8c3e4726f147836dcd62973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/118d03b29feddbc464cba0c533bdca378aea0863",
-                "reference": "118d03b29feddbc464cba0c533bdca378aea0863",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/f031b6df5461d86bd8c3e4726f147836dcd62973",
+                "reference": "f031b6df5461d86bd8c3e4726f147836dcd62973",
                 "shasum": ""
             },
             "require": {
@@ -6038,7 +6038,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-16T13:10:32+00:00"
+            "time": "2025-01-17T11:48:14+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -6465,12 +6465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "69d3f568cea353d8161bdc11f2609e9ddbb41413"
+                "reference": "f83ffadb3c72f40305d5ae2b7a95b4dcad1a4a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/69d3f568cea353d8161bdc11f2609e9ddbb41413",
-                "reference": "69d3f568cea353d8161bdc11f2609e9ddbb41413",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f83ffadb3c72f40305d5ae2b7a95b4dcad1a4a2c",
+                "reference": "f83ffadb3c72f40305d5ae2b7a95b4dcad1a4a2c",
                 "shasum": ""
             },
             "require": {
@@ -6541,7 +6541,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-15T08:06:29+00:00"
+            "time": "2025-01-17T11:48:14+00:00"
         },
         {
             "name": "tightenco/ziggy",

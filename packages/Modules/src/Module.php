@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Translation\Translator;
-use absdev\Modules\Contracts\ActivatorInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\ActivatorInterface;
 
 abstract class Module
 {

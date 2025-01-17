@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Module;
 use Symfony\Component\Console\Input\InputArgument;
 
 class DisableCommand extends Command

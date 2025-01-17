@@ -1,11 +1,11 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
 use Illuminate\Support\ServiceProvider;
-use absdev\Modules\Providers\BootstrapServiceProvider;
-use absdev\Modules\Providers\ConsoleServiceProvider;
-use absdev\Modules\Providers\ContractsServiceProvider;
+use AbbeySoftwareDevelopment\Modules\Providers\BootstrapServiceProvider;
+use AbbeySoftwareDevelopment\Modules\Providers\ConsoleServiceProvider;
+use AbbeySoftwareDevelopment\Modules\Providers\ContractsServiceProvider;
 
 abstract class ModulesServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Routing;
+namespace AbbeySoftwareDevelopment\Modules\Routing;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

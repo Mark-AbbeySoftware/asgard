@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Facades;
+namespace AbbeySoftwareDevelopment\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -10,15 +10,15 @@ class Module extends Facade
      * @method static array all()
      * @method static array getCached()
      * @method static array scan()
-     * @method static \absdev\Modules\Collection toCollection()
+     * @method static \AbbeySoftwareDevelopment\Modules\Collection toCollection()
      * @method static array getScanPaths()
      * @method static array allEnabled()
      * @method static array allDisabled()
      * @method static int count()
      * @method static array getOrdered($direction = 'asc')
      * @method static array getByStatus($status)
-     * @method static \absdev\Modules\Module find(string $name)
-     * @method static \absdev\Modules\Module findOrFail(string $name)
+     * @method static \AbbeySoftwareDevelopment\Modules\Module find(string $name)
+     * @method static \AbbeySoftwareDevelopment\Modules\Module findOrFail(string $name)
      * @method static string getModulePath($moduleName)
      * @method static \Illuminate\Filesystem\Filesystem getFiles()
      * @method static mixed config(string $key, $default = null)

@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Contracts\ActivatorInterface;
-use absdev\Modules\Generators\ModuleGenerator;
+use AbbeySoftwareDevelopment\Modules\Contracts\ActivatorInterface;
+use AbbeySoftwareDevelopment\Modules\Generators\ModuleGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Exceptions;
+namespace AbbeySoftwareDevelopment\Modules\Exceptions;
 
 class ModuleNotFoundException extends \Exception
 {

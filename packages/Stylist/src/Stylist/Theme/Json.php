@@ -1,9 +1,9 @@
 <?php
 
-namespace FloatingPoint\Stylist\Theme;
+namespace AbbeySoftwareDevelopment\Stylist\Theme;
 
+use AbbeySoftwareDevelopment\Stylist\Theme\Exceptions\ThemeJsonNotFoundException;
 use File;
-use FloatingPoint\Stylist\Theme\Exceptions\ThemeJsonNotFoundException;
 
 class Json
 {
@@ -38,7 +38,7 @@ class Json
             return $this->json;
         }
 
-        $themeJsonPath = $this->themePath.'/theme.json';
+        $themeJsonPath = $this->themePath . '/theme.json';
 
         if (!File::exists($themeJsonPath)) {
             throw new ThemeJsonNotFoundException($this->themePath);

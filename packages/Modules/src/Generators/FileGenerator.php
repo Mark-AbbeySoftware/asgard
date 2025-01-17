@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Generators;
+namespace AbbeySoftwareDevelopment\Modules\Generators;
 
 use Illuminate\Filesystem\Filesystem;
-use absdev\Modules\Exceptions\FileAlreadyExistException;
+use AbbeySoftwareDevelopment\Modules\Exceptions\FileAlreadyExistException;
 
 class FileGenerator extends Generator
 {

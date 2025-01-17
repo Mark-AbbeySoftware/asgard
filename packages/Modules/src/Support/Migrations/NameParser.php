@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Support\Migrations;
+namespace AbbeySoftwareDevelopment\Modules\Support\Migrations;
 
 class NameParser
 {

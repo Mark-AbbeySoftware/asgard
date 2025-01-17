@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Module;
-use absdev\Modules\Publishing\AssetPublisher;
+use AbbeySoftwareDevelopment\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Publishing\AssetPublisher;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishCommand extends Command

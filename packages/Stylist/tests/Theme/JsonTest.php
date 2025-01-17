@@ -1,7 +1,8 @@
 <?php
+
 namespace Tests\Theme;
 
-use FloatingPoint\Stylist\Theme\Json;
+use AbbeySoftwareDevelopment\Stylist\Theme\Json;
 
 class JsonTest extends \Tests\TestCase
 {
@@ -9,10 +10,10 @@ class JsonTest extends \Tests\TestCase
 
     public function init()
     {
-        $this->themeJson = new Json(__DIR__.'/../Stubs/Themes/Parent');
+        $this->themeJson = new Json(__DIR__ . '/../Stubs/Themes/Parent');
     }
 
-	public function testJsonRetrievalForExistingTheme()
+    public function testJsonRetrievalForExistingTheme()
     {
         $json = $this->themeJson->getJson();
 
@@ -28,7 +29,7 @@ class JsonTest extends \Tests\TestCase
     }
 
     /**
-     * @expectedException FloatingPoint\Stylist\Theme\Exceptions\ThemeJsonNotFoundException
+     * @expectedException AbbeySoftwareDevelopment\Stylist\Theme\Exceptions\ThemeJsonNotFoundException
      */
     public function testThemeFileMissing()
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Process;
+namespace AbbeySoftwareDevelopment\Modules\Process;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use absdev\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
 use Symfony\Component\Process\Process;
 
 class Installer
@@ -26,7 +26,7 @@ class Installer
     /**
      * The module repository instance.
      *
-     * @var \absdev\Modules\Contracts\RepositoryInterface
+     * @var \AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface
      */
     protected $repository;
 

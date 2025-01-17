@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Exceptions\InvalidActivatorClass;
-use absdev\Modules\Support\Stub;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Exceptions\InvalidActivatorClass;
+use AbbeySoftwareDevelopment\Modules\Support\Stub;
 
 class LaravelModulesServiceProvider extends ModulesServiceProvider
 {

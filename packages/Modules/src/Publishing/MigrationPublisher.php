@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Publishing;
+namespace AbbeySoftwareDevelopment\Modules\Publishing;
 
-use absdev\Modules\Migrations\Migrator;
+use AbbeySoftwareDevelopment\Modules\Migrations\Migrator;
 
 class MigrationPublisher extends AssetPublisher
 {

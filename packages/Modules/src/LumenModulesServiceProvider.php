@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
-use absdev\Modules\Support\Stub;
+use AbbeySoftwareDevelopment\Modules\Support\Stub;
 
 class LumenModulesServiceProvider extends ModulesServiceProvider
 {

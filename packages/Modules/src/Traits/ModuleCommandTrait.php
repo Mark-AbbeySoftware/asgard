@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Traits;
+namespace AbbeySoftwareDevelopment\Modules\Traits;
 
 trait ModuleCommandTrait
 {

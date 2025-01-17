@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules;
+namespace AbbeySoftwareDevelopment\Modules;
 
 use Countable;
 use Illuminate\Cache\CacheManager;
@@ -10,11 +10,11 @@ use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Exceptions\InvalidAssetPath;
-use absdev\Modules\Exceptions\ModuleNotFoundException;
-use absdev\Modules\Process\Installer;
-use absdev\Modules\Process\Updater;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Exceptions\InvalidAssetPath;
+use AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException;
+use AbbeySoftwareDevelopment\Modules\Process\Installer;
+use AbbeySoftwareDevelopment\Modules\Process\Updater;
 
 abstract class FileRepository implements Countable, RepositoryInterface
 {
@@ -127,7 +127,7 @@ abstract class FileRepository implements Countable, RepositoryInterface
      * @param Container $app
      * @param string $args
      * @param string $path
-     * @return \absdev\Modules\Module
+     * @return \AbbeySoftwareDevelopment\Modules\Module
      */
     abstract protected function createModule(...$args);
 
@@ -451,7 +451,7 @@ abstract class FileRepository implements Countable, RepositoryInterface
     /**
      * Get module used for cli session.
      *
-     * @throws \absdev\Modules\Exceptions\ModuleNotFoundException
+     * @throws \AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException
      */
     public function getUsedNow(): string
     {
@@ -517,7 +517,7 @@ abstract class FileRepository implements Countable, RepositoryInterface
      * @param string $name
      * @return void
      *
-     * @throws \absdev\Modules\Exceptions\ModuleNotFoundException
+     * @throws \AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException
      */
     public function enable($name)
     {
@@ -530,7 +530,7 @@ abstract class FileRepository implements Countable, RepositoryInterface
      * @param string $name
      * @return void
      *
-     * @throws \absdev\Modules\Exceptions\ModuleNotFoundException
+     * @throws \AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException
      */
     public function disable($name)
     {

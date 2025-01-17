@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 class LaravelModulesV6Migrator extends Command
 {

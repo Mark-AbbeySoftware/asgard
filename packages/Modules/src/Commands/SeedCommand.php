@@ -1,15 +1,15 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use ErrorException;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Module;
-use absdev\Modules\Support\Config\GenerateConfigReader;
-use absdev\Modules\Traits\ModuleCommandTrait;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Support\Config\GenerateConfigReader;
+use AbbeySoftwareDevelopment\Modules\Traits\ModuleCommandTrait;
 use RuntimeException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;

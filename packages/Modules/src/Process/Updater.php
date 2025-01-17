@@ -1,8 +1,8 @@
 <?php
 
-namespace absdev\Modules\Process;
+namespace AbbeySoftwareDevelopment\Modules\Process;
 
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 class Updater extends Runner
 {

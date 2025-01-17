@@ -1,11 +1,12 @@
 <?php
+
 namespace Tests\Theme;
 
-use FloatingPoint\Stylist\Theme\Theme;
+use AbbeySoftwareDevelopment\Stylist\Theme\Theme;
 
 class ThemeTest extends \Tests\TestCase
 {
-	public function init()
+    public function init()
     {
         $this->theme = new Theme('name', 'description', 'path', 'parent');
     }

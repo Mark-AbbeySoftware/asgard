@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Providers;
+namespace AbbeySoftwareDevelopment\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Laravel\LaravelFileRepository;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Laravel\LaravelFileRepository;
 
 class ContractsServiceProvider extends ServiceProvider
 {

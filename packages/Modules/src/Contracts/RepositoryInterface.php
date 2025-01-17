@@ -1,9 +1,9 @@
 <?php
 
-namespace absdev\Modules\Contracts;
+namespace AbbeySoftwareDevelopment\Modules\Contracts;
 
-use absdev\Modules\Exceptions\ModuleNotFoundException;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 interface RepositoryInterface
 {
@@ -31,7 +31,7 @@ interface RepositoryInterface
     /**
      * Get modules as modules collection instance.
      *
-     * @return \absdev\Modules\Collection
+     * @return \AbbeySoftwareDevelopment\Modules\Collection
      */
     public function toCollection();
 
@@ -146,7 +146,7 @@ interface RepositoryInterface
     /**
      * Delete a specific module.
      *
-     * @throws \absdev\Modules\Exceptions\ModuleNotFoundException
+     * @throws \AbbeySoftwareDevelopment\Modules\Exceptions\ModuleNotFoundException
      */
     public function delete(string $module): bool;
 

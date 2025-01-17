@@ -1,14 +1,14 @@
 <?php
 
-namespace absdev\Modules\Activators;
+namespace AbbeySoftwareDevelopment\Modules\Activators;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Filesystem\Filesystem;
-use absdev\Modules\Contracts\ActivatorInterface;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Contracts\ActivatorInterface;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 class FileActivator implements ActivatorInterface
 {

@@ -1,4 +1,5 @@
 <?php
+
 namespace Tests;
 
 use Mockery as m;
@@ -27,23 +28,23 @@ class TestCase extends \Orchestra\Testbench\TestCase
     {
         return [
             'Collective\Html\HtmlServiceProvider',
-            'FloatingPoint\Stylist\StylistServiceProvider',
+            'AbbeySoftwareDevelopment\Stylist\StylistServiceProvider',
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Stylist' => 'FloatingPoint\Stylist\Facades\StylistFacade',
-            'Theme' => 'FloatingPoint\Stylist\Facades\ThemeFacade',
+            'Stylist' => 'AbbeySoftwareDevelopment\Stylist\Facades\StylistFacade',
+            'Theme' => 'AbbeySoftwareDevelopment\Stylist\Facades\ThemeFacade',
         ];
     }
 
     protected function getApplicationAliases($app)
     {
         $aliases = parent::getApplicationAliases($app);
-        
-        $aliases['Stylist'] = 'FloatingPoint\Stylist\Facades\StylistFacade';
+
+        $aliases['Stylist'] = 'AbbeySoftwareDevelopment\Stylist\Facades\StylistFacade';
 
         return $aliases;
     }

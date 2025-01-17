@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Support;
+namespace AbbeySoftwareDevelopment\Modules\Support;
 
 class Stub
 {

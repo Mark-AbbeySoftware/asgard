@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Migrations\Migrator;
-use absdev\Modules\Publishing\MigrationPublisher;
+use AbbeySoftwareDevelopment\Modules\Migrations\Migrator;
+use AbbeySoftwareDevelopment\Modules\Publishing\MigrationPublisher;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishMigrationCommand extends Command
@@ -46,7 +46,7 @@ class PublishMigrationCommand extends Command
     /**
      * Publish migration for the specified module.
      *
-     * @param \absdev\Modules\Module $module
+     * @param \AbbeySoftwareDevelopment\Modules\Module $module
      */
     public function publish($module)
     {

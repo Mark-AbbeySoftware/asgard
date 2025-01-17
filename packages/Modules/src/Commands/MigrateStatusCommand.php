@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Migrations\Migrator;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Migrations\Migrator;
+use AbbeySoftwareDevelopment\Modules\Module;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -25,7 +25,7 @@ class MigrateStatusCommand extends Command
     protected $description = 'Status for all module migrations';
 
     /**
-     * @var \absdev\Modules\Contracts\RepositoryInterface
+     * @var \AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface
      */
     protected $module;
 

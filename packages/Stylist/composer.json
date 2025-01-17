@@ -33,13 +33,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "FloatingPoint\\Stylist\\StylistServiceProvider"
+                "AbbeySoftwareDevelopment\\Stylist\\StylistServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "FloatingPoint\\Stylist\\": "src/Stylist",
+            "AbbeySoftwareDevelopment\\Stylist\\": "src/Stylist",
             "Tests\\": "tests"
         }
     },

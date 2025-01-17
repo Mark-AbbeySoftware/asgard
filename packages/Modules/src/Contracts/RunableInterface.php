@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Contracts;
+namespace AbbeySoftwareDevelopment\Modules\Contracts;
 
 interface RunableInterface
 {

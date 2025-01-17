@@ -1,6 +1,6 @@
 <?php
 
-namespace absdev\Modules\Generators;
+namespace AbbeySoftwareDevelopment\Modules\Generators;
 
 abstract class Generator
 {

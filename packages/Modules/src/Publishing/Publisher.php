@@ -1,11 +1,11 @@
 <?php
 
-namespace absdev\Modules\Publishing;
+namespace AbbeySoftwareDevelopment\Modules\Publishing;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Contracts\PublisherInterface;
-use absdev\Modules\Contracts\RepositoryInterface;
-use absdev\Modules\Module;
+use AbbeySoftwareDevelopment\Modules\Contracts\PublisherInterface;
+use AbbeySoftwareDevelopment\Modules\Contracts\RepositoryInterface;
+use AbbeySoftwareDevelopment\Modules\Module;
 
 abstract class Publisher implements PublisherInterface
 {
@@ -86,7 +86,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Get module instance.
      *
-     * @return \absdev\Modules\Module
+     * @return \AbbeySoftwareDevelopment\Modules\Module
      */
     public function getModule()
     {

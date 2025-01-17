@@ -1,10 +1,10 @@
 <?php
 
-namespace absdev\Modules\Commands;
+namespace AbbeySoftwareDevelopment\Modules\Commands;
 
 use Illuminate\Console\Command;
-use absdev\Modules\Exceptions\FileAlreadyExistException;
-use absdev\Modules\Generators\FileGenerator;
+use AbbeySoftwareDevelopment\Modules\Exceptions\FileAlreadyExistException;
+use AbbeySoftwareDevelopment\Modules\Generators\FileGenerator;
 
 abstract class GeneratorCommand extends Command
 {
@@ -77,7 +77,7 @@ abstract class GeneratorCommand extends Command
     /**
      * Get class namespace.
      *
-     * @param \absdev\Modules\Module $module
+     * @param \AbbeySoftwareDevelopment\Modules\Module $module
      * @return string
      */
     public function getClassNamespace($module)
