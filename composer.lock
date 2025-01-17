@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dc07a060125869c15908947f42bad44",
+    "content-hash": "a9d7d01788543c614f69e82d4c27329e",
     "packages": [
         {
             "name": "absdev/modules",
@@ -98,7 +98,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/Stylist",
-                "reference": "13c795f362292a34c867dd6454e9217378a02191"
+                "reference": "2fd428c255b4c8a8396d5449bdc171065dbdc3bb"
             },
             "require": {
                 "illuminate/support": "^v11.34.2",
@@ -111,6 +111,13 @@
                 "orchestra/testbench": "^9.9"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FloatingPoint\\Stylist\\StylistServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "FloatingPoint\\Stylist\\": "src/Stylist",
@@ -1365,12 +1372,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1472088e7026f8d87d3c38dfc1bc7e023329a039"
+                "reference": "2e5054a19ba55b335bf8df43a8ae7e032244f671"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1472088e7026f8d87d3c38dfc1bc7e023329a039",
-                "reference": "1472088e7026f8d87d3c38dfc1bc7e023329a039",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2e5054a19ba55b335bf8df43a8ae7e032244f671",
+                "reference": "2e5054a19ba55b335bf8df43a8ae7e032244f671",
                 "shasum": ""
             },
             "require": {
@@ -1572,7 +1579,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-01-16T19:23:14+00:00"
+            "time": "2025-01-16T22:31:40+00:00"
         },
         {
             "name": "laravel/jetstream",
@@ -9414,9 +9421,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "absdev/stylist": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -30,6 +30,13 @@
             }
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FloatingPoint\\Stylist\\StylistServiceProvider"
+            ]
+        }
+    },
     "autoload": {
         "psr-4": {
             "FloatingPoint\\Stylist\\": "src/Stylist",
